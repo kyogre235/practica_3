@@ -4,6 +4,10 @@ type EList a = [(a,a)] {- en esta linea le decimos que
  las listas que tengan "a" van a ser listas con pares -}
 
 
+
+
+holis
+
 longP :: [a] -> Int {- aqui le decimos que tiene que aceptar lista (de pares) 
  y me va a regresar un Int -}
 
