@@ -7,10 +7,9 @@ type EList a = [(a,a)] {- en esta linea le decimos que
 las listas que tengan "a" van a ser listas con pares -}
 
 
-longP :: [a] -> Int {- aqui le decimos que tiene que aceptar lista (de pares) 
- y me va a regresar un Int -}
+longP :: [a] -> Int 
 
-longP [a] = 2 {-} aqui decimos que cuando la lista solo tiene un par, 
+longP [a] = 2 {- aqui decimos que cuando la lista solo tiene un par, 
 me regrese que tiene un valor de 2, pues en ese par hay 2 elementos -}
 
 longP (x:xs) = 2 + longP xs {- aqui le decimos que cuando le entregamos 
@@ -19,12 +18,12 @@ longP de la cola (paso recursivo-}
 
 --ejercicio 2
 
-{- elemP:: (Eq a) => a -> [a] -> Bool
+ elemP:: (Eq a) => a -> [a] -> Bool
 
 elemP a [] = False  
 elemP a (x:xs) = if (a /= x ) 
     then elemP a xs 
-    else True  -}
+    else True  
 
 
 --ejercicio 3
