@@ -12,3 +12,4 @@ me regrese que tiene un valor de 2, pues en ese par hay 2 elementos -}
 longP (x:xs) = 2 + longP xs {- aqui le decimos que cuando le entregamos 
 una lista con cabeza y cola, cuente 2 y le sume el valor de la funcion 
 longP de la cola (paso recursivo-}
+
