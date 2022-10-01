@@ -1,10 +1,14 @@
 --practica 3
 
 
-
---ejercicio 1
 type EList a = [(a,a)] {- en esta linea le decimos que 
 las listas que tengan "a" van a ser listas con pares -}
+
+
+
+
+--ejercicio 1
+
 
 
 longP :: [a] -> Int 
@@ -15,12 +19,12 @@ longP (x:xs) = 2 + longP xs
 
 --ejercicio 2
 
- elemP:: (Eq a) => a -> [a] -> Bool
+{- elemP:: (Eq a) => a -> [a] -> Bool
 
-elemP a [] = False  
-elemP a (x:xs) = if (a /= x ) 
+ elemP a [] = False  
+ elemP a (x:xs) = if (a /= x ) 
     then elemP a xs 
-    else True  
+    else True   -}
 
 
 --ejercicio 3
@@ -49,8 +53,6 @@ snocP :: a -> [a] -> [a]
 snocP a [] = [a]
 
 snocP a (x:xs) = x : snocP a xs 
-
-
 
 
 
