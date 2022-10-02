@@ -149,7 +149,7 @@ reversaP ((x, y):xs) = reversaP xs ++ [(x,y)]
 
 --funcion myMap
 
---myMap :: (c -> b) -> EList a -> EList a
+myMap :: (a -> b) -> EList a -> EList b
 
 myMap f [] = []
 myMap f [(x,y)] = [(f(x),f(y))]
