@@ -60,7 +60,7 @@ atP ((x,y):xs) n = if (n>2)
 
 
 --ejercicio 7
-updateP :: (Num t, Ord t) => EList a -> t -> a -> EList a
+updateP :: (Num n, Ord n) => EList a -> n -> a -> EList a
 --updateP :: Elist a -> Int -> a -> Elist a
 updateP [] n e = error "no hay elementos"
 updateP ((x,y):xs) 1 e = ((e,y):xs)
